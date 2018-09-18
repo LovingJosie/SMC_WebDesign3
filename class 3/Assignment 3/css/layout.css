@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.container{
+    background-color: lightcoral;
+}
+
+.img-title-p{
+    display: block;
+}
+
+.card{
+	margin: 20vh,33vw,20vh,33vw;
+    width: 30vw;
+    border: none;
+}
+
+.img-sm{
+    width: 100px;
+}
+
+@media (min-width: 768px){
+    .img-title-p{
+        display: table-cell;
+        height: 200px;
+    }
+}
+
+
+.carouselExampleControls{
+	margin: 20vh,33vw,20vh,33vw;
+}

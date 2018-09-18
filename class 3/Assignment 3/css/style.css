@@ -1,0 +1,9 @@
+/* typography and layout css imports */
+@import url("typography.css");
+
+@import url("layout.css");
+
+hr{
+    width: 90vw;
+    border-width: 2px;
+}
