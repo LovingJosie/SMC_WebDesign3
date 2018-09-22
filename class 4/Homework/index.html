@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- My CSS -->
+		<link rel="stylesheet" type="text/css" href="../Homework/css/style.css">
+    
+    
+    <title>Assignment 4</title>
+  </head>
+  <body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="navigationBar"  style="background-color:#13568983;">
+            <a class="navbar-brand" href="#">
+                <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto ">
+                <li class="nav-item active">
+                  <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    
+
+
+
+          <!-- columns -->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md">
+                <div class="row">
+                  <div class="col">
+                    <img src="../Homework/picture/menu-top.jpg" alt="..." class="img-thumbnail" width="400" height="200">
+                  </div>
+
+                  <div class="w-100"></div>
+                  
+
+                  <div class="col">
+                    <div class="modal-footer">
+                      <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                            Detail
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Recipes</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  1. cooking
+                                  <br>
+                                  2. eating
+                                  <br>
+                                  3. washing
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                              Order Now
+                            </button>
+
+                          <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+
+                                      <img src="https://static1.squarespace.com/static/54a17da1e4b00eab7b355a4d/t/54d269fce4b0dccf9fb4afae/1423075839037/?format=500w" alt="..." class="img-thumbnail" width="400" height="200">
+
+                                    <br>
+                                    
+                                    The kitchen is helmed by Golo Kwokson Yu who has been with JOSS since 1988, who started as an assistant to the amazing and renowned Lao Ying Chieh, who retired after passing on her special recipes and unsurpassed methods to her talented protege. Golo ascended to become Chef de Cuisine in 1993 and oversaw the successful kitchen until it closed last year. Cecile T'ang, founder of JOSS, remains an integral part of this winning team.
+                                    As part owner of JOSS CUISINE, Golo toured all the major culinary capitals of China and came to the conclusion that the most exciting direction for the new restaurant will be to return to the rich heritage of fine Chinese cuisine. Keeping in mind today's health conscious eating habits, JOSS CUISINE will draw on the traditional recipes, many with herbal elixir ingredients valued for hundreds of years, and present them to the smart sensible diners of today.
+                                    They select organic produce from small contract farmers whenever possible. This, too, has been JOSS/Chinese Haute Cuisine's tradition and few of our regular patrons would ever forget the very popular Chicken & Fig Soup Elixir, a delicious fixture on the menu; nor would they forget all the multi-color heirloom grain dishes. The Akai grains are contract-farmed in southern France by our produce consultant, Jackson Chong, a devotee of food microbiology. JOSS's ice cream maker even made the no-guilt Akai ice cream from these healthy grains, which we now serve once again.
+                                    JOSS CUISINE's menu is a reflection of China's traditional culinary history demonstrating the lasting influence of Chinese food on today's modern palate. JOSS's signature Hong Kong Pin Pei Chicken and China's most famous dish, Peking Duck, remain as specialties of the house.
+                                    The decor of the restaurant, as our name indicates, will be Chinese Traditional, harmonized for today's visual senses. Walk through the entrance and you know you are in for something distinctive with the minimalist, Shanghai 30's theme.
+                                    The new restaurant is much smaller in size than the original JOSS. We hope to concentrate our efforts to serve the especially discerning patrons who appreciate us.
+                                    To quote the eminent Yuan Dynasty painter, Chao Meng Fu (1253–1325), "Talk only with the ones who understand, speak not at all to those who don't." When seating is so limited, perhaps it's a good advice to follow. But all in all, as with the original restaurant, at JOSS CUISINE, cooking is still a lot of fun for us, and dining will still be hedonistic for you.
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+
+
+
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+              <div class="col-sm">
+                  <div id="list-example" class="list-group">
+                      <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                      <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                      <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                      <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                    </div>
+                    <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+                      <h4 id="list-item-1">Item 1</h4>
+                      <p>The design of our brand new kitchen has been meticulously planned to deliver the caliber of food that we always dream about — the best Chinese cooking offered anywhere.</p>
+                      <h4 id="list-item-2">Item 2</h4>
+                      <p>It's our goal that people will no longer need to hop on a plane to savor their favorite Chinese dishes. Carrying on the culinary heritage of old China matters to us and to JOSS/Chinese Haute Cuisine's appreciative clientele. It's a must that JOSS CUISINE/Traditional continues to live up to the high level as stated by the legendary columnist, Liz Smith who said:</p>
+                      <h4 id="list-item-3">Item 3</h4>
+                      <p>"Joss gives Chinese its best name yet."</p>
+                      <h4 id="list-item-4">Item 4</h4>
+                      <p>Coming from someone who frequents the best places around the globe, we say thank you to her and promise that we are committed to providing both her and her readers extraordinary food. To prepare for the task, the chef owner, Golo Kwokson Yu, took extensive food tasting trips around China after the old JOSS closed. He was guided by food aficionados, close friends of Cecile T'ang, on a tour from one city to another.</p>
+                    </div>
+              </div>
+            </div>
+          
+          
+          
+          
+            <div class="card text-white bg-dark footer">
+                <div class="card-body text-center small">
+                  <em>Have a good one</em>
+                </div>
+            </div>
+          
+          
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
