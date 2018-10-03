@@ -106,6 +106,12 @@
                             </div>
     
 
+
+
+
+
+
+                            
                             <br>
                             <br>
 
@@ -126,24 +132,56 @@
 
 
                 <script>
-                    $('#carouselExampleControls').carousel({
-                      autoplay:false,
-                      nav:true,
-  
-                    })
-  
-                      $('#start-btn').click(function(){
+                    //Activate Carousel
+                    $('#carouselExampleControls').carousel()({interval:1000});                    
+                    $('#carouselExampleControls').carousel('pasue');
 
-                          $('#carouselExampleControls').carousel({
-                              autoplay:true,
-                          });
-                          $('.alert').removeClass('d-none');
-                      });
+                    // Starts the carousel with button
+                    $('.start-slide').click(function(){
+                        console.log($("#carouselExampleControls"));
+                        $('#carouselExampleControls')
+                    })
+
+
+
+
+
+                    // $(document).ready(function(){
+                    //     $('#carouselExampleControls').carousel();
+
+                    //     $('#start-btn').on("click", function(){
+                    //         $('#carouselExampleControls').removeClass('d-none');
+                    //         $('#carouselExampleControls').addClass('d-none');
+                    //     })
+                        
+
+                    //     $("#toggleBtn").on("click",function(){
+                    //         $('#carouselExampleControls').toggleClass('d-none');
+                    //         $('#carouselExampleControls').toggleClass('d-none');
+                    //     })
+
+
+                    // })
+
+
+                    // $('#carouselExampleControls').carousel({
+                    //   autoplay:false,
+                    //   nav:true,
   
-                      $('#pause-btn').click(function(){
-                          $('.carousel').carousel('pause');
-                          $('.alert').removeClass('d-none');
-                      })
+                    // })
+  
+                    //   $('#start-btn').click(function(){
+
+                    //       $('#carouselExampleControls').carousel({
+                    //           autoplay:true,
+                    //       });
+                    //       $('.alert').removeClass('d-none');
+                    //   });
+  
+                    //   $('#pause-btn').click(function(){
+                    //       $('.carousel').carousel('pause');
+                    //       $('.alert').removeClass('d-none');
+                    //   })
   
               </script>
 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>\</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="icon" href="favicaon.ico" type="image/x-icon"/>
+
+
+
+</head>
+<body>
+    
+    <button id="append">Append</button>
+    <button id="appendto">Appendto</button>
+    <button id="prepend">Prepend</button>    
+    <button id="prependto">Prependto</button>
+
+    <hr>
+
+    <button id="before">Add before</button>
+    <button id="after">Add after</button>
+
+    <hr>
+
+    <button id="remove">remove</button>
+    <button id="removeAll">remove all</button>
+
+    <div class="container">
+        <h1>Hello,Word</h1>
+    </div>
+
+
+
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $('#append').on("click", function(){
+                $('.container').append('<p style="color:red;">Appending!</p>');
+            })
+        
+    
+
+            $('#append').on("click", function(){
+                $('<p style>').append('<p style="color:blue;">Appending!</p>');
+            })
+   
+    
+
+            $('#append').on("click", function(){
+                $('.container').append('<p style="color:red;">Appending!</p>');
+            })
+        
+        
+            $('#before').on("click", function(){
+                $('.container').before('<p style="color:orange;">Adding Before!</p>');
+            })
+        
+            $('#after').on("click", function(){
+                $('.container').after('<p style="color:purple;">Adding after!</p>');
+            })    
+        
+
+            $('#remove').on("click", function(){
+                $("p",".container").remove('p');
+            }) 
+
+
+            $('#removeAll').on("click", function(){
+                $("p").remove();
+            }) 
+
+
+
+
+
+        })
+
+//  cuisit
+
+
+    </script>
+
+
+
+
+</body>
+</html>
