@@ -33,20 +33,20 @@
   <body>
 
     <nav class="navbar fixed-top navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="Home.html">Cuisit</a>
+        <a class="navbar-brand text-warning" href="Home.html">Cuisit</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="About.html">About <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-warning" href="About.html">About <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Services.html">Service <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-warning" href="Services.html">Service <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Team.html">Team <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-warning" href="Team.html">Team <span class="sr-only">(current)</span></a>
               </li>
 
 
@@ -54,11 +54,29 @@
             <span class="navbar-text">
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0 text-warning" type="submit">Search</button>
                 </form>
             </span>
         </div>
     </nav>
+
+
+    <!-- title -->
+    <div class="container-fluid">
+        <div class="row pt-4">
+            <div class="col-md-4"></div>
+            <div class="col-12 col-md-4 text-center">
+                <h1 class="text-warning pt-5 lobster splash-heading">Cuisit</h1>
+                <h4 class="text-warning">Protect your studies.
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+
+
+
+
 
     <!-- Carousel -->
     <div class="container_carosel">
@@ -71,42 +89,16 @@
             <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="picture_container"><img class="d-block w-100" src="image/tutor-606091_1920.jpg"   alt="First slide"></div>
-                <div class="carousel-caption d-none d-md-block">
-                        <div class="carousel-caption d-none d-md-block">
-                                <div class="jumbotron">
-                                        <h1 class="display-4">Wecome to Cuisit!</h1>
-                                        <p class="lead">Cuisit is an online after-school tutorial classes.</p>
-                                        <hr class="my-4">
-                                        <p>To perfect this world with knowledge.</p>
-                                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                                      </div>
-                        </div>
-                      </div>
             </div>
             <div class="carousel-item">
                 <div class="picture_container"><img class="d-block w-100" src="image/游学.png" alt="Second slide"></div>
                 <div class="carousel-caption d-none d-md-block">
-                        <div class="jumbotron">
-                                <h1 class="display-4">Wecome to Cuisit!</h1>
-                                <p class="lead">Cuisit is an online after-school tutorial classes.</p>
-                                <hr class="my-4">
-                                <p>To perfect this world with knowledge.</p>
-                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                              </div>
+                       
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="picture_container"><img class="d-block w-100" src="image/斯坦福.jpg" alt="Third slide"></div>
-                <div class="carousel-caption d-none d-md-block">
-                        <div class="jumbotron">
-                                <h1 class="display-4">Wecome to Cuisit!</h1>
-                                <p class="lead">Cuisit is an online after-school tutorial classes.</p>
-                                <hr class="my-4">
-                                <p>To perfect this world with knowledge.</p>
-                                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                              </div>
-                      </div>
-            </div>
+                <div class="carousel-caption d-none d-md-block"></div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -129,9 +121,9 @@
 
         <div class="container_alert">
             <div class="alert alert-success" role="alert">
-                    <form class="form-inline my-2 my-lg-0" id="container_subscribe">
-                            <button class="btn btn-outline-dark my-2 my-sm-0" type="button" data-toggle="modal" data-target="#pop-up-modal">Subscribe!</button>
-                    </form>
+                    <div class="form-inline my-2 my-lg-0" style="text-align:center" id="container_subscribe">
+                            <button  class="btn btn-outline-dark my-2 my-sm-0 button-center" type="button" data-toggle="modal" data-target="#pop-up-modal">Subscribe!</button>
+                    </div>
 
                     <!-- PUP-UP MODAL -->
         <div class="modal fade" id="pop-up-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -141,7 +133,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <form>
-                        <div class="modal-body text-center">
+                        <div class="modal-body text-center text-info">
                         <h1 class="pb-4">Let us know what you want!</h1>
                         <h5><em>Sign up for our newsletter.</em></h5>
                             
@@ -157,12 +149,12 @@
                         </div>
                         <div class="modal-footer bg-dark">
                         <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-                        <button class="btn btn-info disabled" id="email-submit-btn" type="submit">Subscribe</button>
+                        <button class="btn btn-info disabled " id="email-submit-btn" type="submit">Subscribe</button>
                         </div>
                     </form>
                 </div>
                 </div>
-            </div>
+        </div>
                 
             </div>
 

@@ -36,3 +36,12 @@
     margin-left: 5vw;
     margin-right: 5vw;
 }
+
+.rounded-circle{
+    float: left;
+}
+
+#space_col{
+    width: 5vw;
+    background-color: blue;
+}
