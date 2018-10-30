@@ -18,15 +18,17 @@
 
 
 
-    <form>
-        <label for="make">Car make</label>
-        <select id="make">
-            <option>Audi</option>
-            <option>BMW</option>
-            <option selected>Benz</option>
-            <option>Lexus</option>
+    <form action="auto-select.php">
 
-        </select>
+        <fieldset>
+          <label for="make">Car make:</label>  
+          <select id="make" name="make">
+            <option value="audi">Audi</option>
+            <option value="bmw">BMW</option>
+            <option value="merc" selected="selected">Mercedes</option>
+            <option value="lexus">Lexus</option>
+          </select>
+        </fieldset>
 
         <fieldset>
             <label for="model">Car model</label>
@@ -49,27 +51,55 @@
     
         $(document).ready(function(){
 
-            var bmwModels = ["2-series", "3-series", "4-series", "5-series", "7-series"];
-            var BenzModels = ["2-series", "3-series", "4-series", "5-series", "7-series"];
-            var AudiModels = ["2-series", "3-series", "4-series", "5-series", "7-series"];
-            var LexusModels = ["2-series", "3-series", "4-series", "5-series", "7-series"];
+            var bmwModels = ["S2", "S3", "S5", "S7"];
+            var mercModels = ["2-series", "3-series", "4-series", "5-series", "7-series"];
+            var audiModels = ["Class-A", "Class-B", "Class-C", "Class-E", "Class-S", "Class-G"];
+            var lexusModels = ["IS", "ES", "LX"];
 
 
             var updateModel = function(){
                 console.log($('#make').val());
             
+
+                    $('#model').removeAttr('disabled');
+                    $('#model').html('');
             
-                if ($('#make').val() === 'BMW'  ) {
-                    for (var i = 0; i < bmwModels.length; i++){
-                        console.log(bmwModels[i]);
-                        var htmlContent = '<option value="' + bmwModels[i] + '">' + bmwModels[i] + '</option>'
+                if ($('#make').val() === 'bmw'  ) {
+                        for (var i = 0; i < bmwModels.length; i++){
+                            console.log(bmwModels[i]);
+                            var htmlContent = '<option value="' + bmwModels[i] + '">' + bmwModels[i] + '</option>';
 
-                        $('#model').append(htmlContent);
-                            
+                            $('#model').append(htmlContent);
 
-
+                        }
                     }
+
+
+                if($('#make').val() === 'audi'){
+                        for(var i = 0; i < audiModels.length; i++){
+                            console.log(audiModels[i]);
+                            var htmlContent = '<option value="' + audiModels[i] + '">' + audiModels[i] + "</option>";
+                            $('#model').append(htmlContent);
+                        }
                     }
+
+                if($('#make').val() === 'merc'){
+                        for(var i = 0; i < mercModels.length; i++){
+                            console.log(mercModels[i]);
+                            var htmlContent = '<option value="' + mercModels[i] + '">' + mercModels[i] + "</option>";
+                            $('#model').append(htmlContent);
+                        }
+                    }
+
+                if($('#make').val() === 'lexus'){
+                        for(var i = 0; i < lexusModels.length; i++){
+                            console.log(lexusModels[i]);
+                            var htmlContent = '<option value="' + lexusModels[i] + '">' + lexusModels[i] + "</option>";
+                            $('#model').append(htmlContent);
+                        }
+                    }
+
+
                 }
 
 
