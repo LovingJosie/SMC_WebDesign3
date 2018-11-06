@@ -17,7 +17,7 @@
 
 
 
-    <title>Game Time!</title>
+    <title>Testing</title>
   </head>
   <body>
     <div class="row p-3 m-0  no-gutter btm-box-shadow">
@@ -50,14 +50,15 @@
             </fieldset>
 
             <button type="button" class="btn btn-success">Success</button>
+            <button type="submit" class="btn btn-info disabled my-3" id="submit-btn">Submit</button>
         </form>
     </div>
 
     <script>
         $(document).ready( function(){
   
-            var onlinegameName = ["FIFA", "Minecraft", "DOTA 2"];
-            var singlegameName = ["Dead Cells", "Call the Duty", "Vanquish"];
+            var onlinegameName = ["FIFA", "Minecraft", "DOTA 2", "Overwatch"];
+            var singlegameName = ["Dead Cells", "Call the Duty", "Vanquish", "Mad Max", "Styx: Shards of Darkness"];
         
             var changegamename = function(){
 
@@ -67,20 +68,20 @@ if($('#OnlineGame').is(':checked')){
     for (var i = 0; i < onlinegameName.length; i++){
         console.log(onlinegameName[i]);
 
-        var inner = '<option value="' + onlinegameName[i] + '">' + onlinegameName[i] + '</option>';
+        var htmlContent = '<option value="' + onlinegameName[i] + '">' + onlinegameName[i] + '</option>';
 
 
-        $("#Gamename").append(inner);
+        $("#Gamename").append(htmlContent);
     };             
     } else if($('#SingleGame').is(':checked')){
                   console.log("SingleGame is seleceted")
                   for (var i = 0; i < singlegameName.length; i++){
                       console.log(singlegameName[i]);
 
-                      var inner = '<option value="' + singlegameName[i] + '">' + singlegameName[i] + '</option>';
+                      var htmlContent = '<option value="' + singlegameName[i] + '">' + singlegameName[i] + '</option>';
 
 
-                      $("#Gamename").append(inner);
+                      $("#Gamename").append(htmlContent);
                   };
               } 
           };
