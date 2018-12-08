@@ -992,6 +992,7 @@ section
 .details_text p
 {
 	font-weight: 500;
+	font-size: 1vw;
 }
 .product_quantity_container
 {
@@ -1463,4 +1464,28 @@ section
 .footer_social ul li a i:hover
 {
 	color: #FFFFFF;
+}
+
+
+/*************** Adding code **************/
+
+.screen-show{
+
+}
+.sapce-container{
+	height: 10%;
+}
+
+
+.row_{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#pro-container{
+	height: 690px;
+	padding: 0;
+	margin: 0;
 }
